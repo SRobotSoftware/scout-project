@@ -10,6 +10,8 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
     crossorigin="anonymous">
+    <!-- Custom extension -->
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <!--Design Goals-->
@@ -25,13 +27,14 @@
 <body>
 
     <!--Open Site Container-->
-    <div class="container-fluid">
+    <div class="container-fluid site-container">
         <!--Column A-->
         <div class="col-md-6">
-            <img class="col-md-6 img-responsive" src="img/NYLT_4k.jpg" alt="">
-            <h1 class="col-md-6">National<br />Youth<br />Leadership<br />Training<br />Ore-Ida Council</h1>
+            <img class="col-xs-6" src="img/NYLT_4k.jpg" alt="NYLT Logo">
+            <span class="col-xs-6 visible-xs h3">National<br />Youth<br />Leadership<br />Training<br />Ore-Ida Council</span>
+            <span class="col-xs-6 hidden-xs h1">National<br />Youth<br />Leadership<br />Training<br />Ore-Ida Council</span>
             <div class="row">
-                <h3 class="col-md-12 text-center">At Camp Morrison in McCall, Idaho</h3>
+                <h3 class="col-xs-12 text-center">At Camp Morrison in McCall, Idaho</h3>
             </div>
             <div class="row">
                 <p>
@@ -86,7 +89,7 @@
                 <fieldset>
                     <legend>Registration</legend>
                     <div class="form-group row">
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 text-right text-left-sm">
                             <label for="courseSelection">Select Course:</label>
                         </div>
                         <div class="col-md-6">
@@ -97,7 +100,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 text-right text-left-sm">
                             <label for="nameFull">Full Name:</label>
                         </div>
                         <div class="col-md-4">
@@ -108,7 +111,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 text-right text-left-sm">
                             <label for="address">Full Address:</label>
                         </div>
                         <div class="col-md-4">
@@ -127,7 +130,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 text-right text-left-sm">
                             <label for="email">Email:</label>
                         </div>
                         <div class="col-md-8">
@@ -135,7 +138,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 text-right text-left-sm">
                             <label for="phone">Phone:</label>
                         </div>
                         <div class="col-md-4">
@@ -143,15 +146,22 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 text-right text-left-sm">
                             <label for="age">Age:</label>
                         </div>
                         <div class="col-md-2">
-                            <input type="number" class="form-control" name="age" placeholder="16" />
+                            <select class="form-control" name="age">
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 text-right text-left-sm">
                             <label for="rank">Rank:</label>
                         </div>
                         <div class="col-md-4">
@@ -167,15 +177,15 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 text-right text-left-sm">
                             <label for="age">Unit #:</label>
                         </div>
                         <div class="col-md-2">
-                            <input type="number" class="form-control" name="unit" placeholder="123" />
+                            <input type="number" class="form-control" name="unit" placeholder="1234" />
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 text-right text-left-sm">
                             <label for="shirt">Shirt Size:</label>
                         </div>
                         <div class="col-md-8">
@@ -197,7 +207,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 text-right text-left-sm">
                             <label for="age">Dietary Restrictions:</label>
                         </div>
                         <div class="col-md-8">
@@ -205,7 +215,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-4 text-right text-left-sm">
                             <label for="age">Physical Restrictions:</label>
                         </div>
                         <div class="col-md-8">
