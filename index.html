@@ -3,7 +3,7 @@
 <head>
 
     <meta charset="UTF-8">
-    <title>NYLT Ore-Ida Council Registration</title>
+    <title>NYLT Ore-namea Council Registration</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
     crossorigin="anonymous">
@@ -25,20 +25,20 @@
 <body>
 
     <!--Open Site Container-->
-    <div class="container-fluid">
+    <div class="container-fluname">
         <!--Column A-->
         <div class="col-md-6">
             <img class="col-md-6 img-responsive" src="img/NYLT_4k.jpg" alt="">
-            <h1 class="col-md-6">National<br />Youth<br />Leadership<br />Training<br />Ore-Ida Council</h1>
+            <h1 class="col-md-6">National<br />Youth<br />Leadership<br />Training<br />Ore-namea Council</h1>
             <div class="row">
-                <h3 class="col-md-12 text-center">At Camp Morrison in McCall, Idaho</h3>
+                <h3 class="col-md-12 text-center">At Camp Morrison in McCall, nameaho</h3>
             </div>
             <div class="row">
                 <p>
                     Come join our NYLT course! We need leaders just like YOU! Adult Leaders, let us do the talking for you! If you like the course
                     and you’re interested in having scouts from your youth attend, our staff would be happy to come to one
                     of your meetings and present the NYLT program to your unit. We’d be pleased to come and answer any questions
-                    you or your scouts might have. We also have some short videos available about the course; we can even
+                    you or your scouts might have. We also have some short vnameeos available about the course; we can even
                     play some team games with your troop. The choice is yours.
                 </p>
                 <p>
@@ -82,7 +82,7 @@
                 Dietary Restrictions: {text}
                 Physical Restrictions: {text}
             -->
-            <form action="#" method="POST" id="registration">
+            <form action="http://api.boisecodeworks.com/echo" method="POST">
                 <fieldset>
                     <legend>Registration</legend>
                     <div class="form-group row">
@@ -90,7 +90,7 @@
                             <label for="courseSelection">Select Course:</label>
                         </div>
                         <div class="col-md-6">
-                            <select class="form-control" id="courseSelection">
+                            <select class="form-control" name="courseSelection">
                                 <option value="1">Course 1: July 13th - July 18th 2016</option>
                                 <option value="2">Course 2: July 20th - July 25th 2016</option>
                             </select>
@@ -101,10 +101,10 @@
                             <label for="nameFull">Full Name:</label>
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" type="text" id="nameFirst" placeholder="First" />
+                            <input class="form-control" type="text" name="nameFirst" placeholder="First" />
                         </div>
                         <div class="col-md-4">
-                            <input class="form-control" type="text" id="nameLast" placeholder="Last" />
+                            <input class="form-control" type="text" name="nameLast" placeholder="Last" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -112,18 +112,18 @@
                             <label for="address">Full Address:</label>
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control" id="addrStreet" placeholder="Street" />
+                            <input type="text" class="form-control" name="addrStreet" placeholder="Street" />
                         </div>
                         <div class="col-md-4">
-                            <input type="text" class="form-control" id="addrCity" placeholder="City" />
+                            <input type="text" class="form-control" name="addrCity" placeholder="City" />
                         </div>
                     </div>
                     <div class="form-group row">
                         <div class="col-md-4 col-md-offset-4">
-                            <input type="text" class="form-control" id="addrState" placeholder="State" />
+                            <input type="text" class="form-control" name="addrState" placeholder="State" />
                         </div>
                         <div class="col-md-4">
-                            <input type="number" class="form-control" id="addrZIP" placeholder="ZIP" />
+                            <input type="number" class="form-control" name="addrZIP" placeholder="ZIP" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -131,7 +131,7 @@
                             <label for="email">Email:</label>
                         </div>
                         <div class="col-md-8">
-                            <input type="email" class="form-control" id="email" placeholder="boy@scouts.com" />
+                            <input type="email" class="form-control" name="email" placeholder="boy@scouts.com" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -139,7 +139,7 @@
                             <label for="phone">Phone:</label>
                         </div>
                         <div class="col-md-4">
-                            <input type="number" class="form-control" id="phone" placeholder="123-456-7891" />
+                            <input type="number" class="form-control" name="phone" placeholder="123-456-7891" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -147,7 +147,7 @@
                             <label for="age">Age:</label>
                         </div>
                         <div class="col-md-2">
-                            <input type="number" class="form-control" id="age" placeholder="16" />
+                            <input type="number" class="form-control" name="age" placeholder="16" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -155,7 +155,7 @@
                             <label for="rank">Rank:</label>
                         </div>
                         <div class="col-md-4">
-                            <select class="form-control" id="rank">
+                            <select class="form-control" name="rank">
                                 <option value="scout">Scout</option>
                                 <option value="tenderfoot">Tenderfoot</option>
                                 <option value="2class">Second-Class</option>
@@ -171,7 +171,7 @@
                             <label for="age">Unit #:</label>
                         </div>
                         <div class="col-md-2">
-                            <input type="number" class="form-control" id="unit" placeholder="123" />
+                            <input type="number" class="form-control" name="unit" placeholder="123" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -180,19 +180,19 @@
                         </div>
                         <div class="col-md-8">
                             <label class="radio-inline">
-                                <input type="radio" id="shirt" value="s"> S
+                                <input type="radio" name="shirt" value="s"> S
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" id="shirt" value="m"> M
+                                <input type="radio" name="shirt" value="m"> M
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" id="shirt" value="l"> L
+                                <input type="radio" name="shirt" value="l"> L
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" id="shirt" value="xl"> XL
+                                <input type="radio" name="shirt" value="xl"> XL
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" id="shirt" value="xxl"> 2XL
+                                <input type="radio" name="shirt" value="xxl"> 2XL
                             </label>
                         </div>
                     </div>
@@ -201,7 +201,7 @@
                             <label for="age">Dietary Restrictions:</label>
                         </div>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" id="diet" placeholder="None" />
+                            <input type="text" class="form-control" name="diet" placeholder="None" />
                         </div>
                     </div>
                     <div class="form-group row">
@@ -209,7 +209,7 @@
                             <label for="age">Physical Restrictions:</label>
                         </div>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" id="phys" placeholder="None" />
+                            <input type="text" class="form-control" name="phys" placeholder="None" />
                         </div>
                     </div>
                 </fieldset>
