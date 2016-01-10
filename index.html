@@ -1,0 +1,224 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>NYLT Ore-Ida Council Registration</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+    crossorigin="anonymous">
+
+</head>
+<!--Design Goals-->
+<!--
+    
+    Keep the page simple, nothing flashy or extraneous
+    Information is king, don't obscure anything
+    The focus of the page is the registration form
+    PLEASE NO TABLES OR COMIC SANS
+    
+-->
+
+<body>
+
+    <!--Open Site Container-->
+    <div class="container-fluid">
+        <!--Column A-->
+        <div class="col-md-6">
+            <img class="col-md-6 img-responsive" src="img/NYLT_4k.jpg" alt="">
+            <h1 class="col-md-6">National<br />Youth<br />Leadership<br />Training<br />Ore-Ida Council</h1>
+            <div class="row">
+                <h3 class="col-md-12 text-center">At Camp Morrison in McCall, Idaho</h3>
+            </div>
+            <div class="row">
+                <p>
+                    Come join our NYLT course! We need leaders just like YOU! Adult Leaders, let us do the talking for you! If you like the course
+                    and you’re interested in having scouts from your youth attend, our staff would be happy to come to one
+                    of your meetings and present the NYLT program to your unit. We’d be pleased to come and answer any questions
+                    you or your scouts might have. We also have some short videos available about the course; we can even
+                    play some team games with your troop. The choice is yours.
+                </p>
+                <p>
+                    The course this year will cost $200 per participant. This fee covers meals and the costs for the program elements. A $50
+                    non-refundable deposit is required with an application. Final payments need to be received in the Scout
+                    Office by June 20, 2016. We understand that the fees can be steep for some scouts with limited resources;
+                    we encourage youth to start now to acquire these funds via work or scholarship (a limited amount are
+                    available - all applications will be reviewed by the training committee and awarded as funds allow).
+                    We really want all youth leaders to have the opportunity to participate in this fabulous course.
+                </p>
+                <p class="text-info">
+                    If you have any questions, please contact NYLT Course Directors:
+                    <br /><b>Paul Campbell</b> <a href="tel:12085147140">(208) 514-7140</a> <a href="mailto:pjosephcampbell@me.com">pjosephcampbell@me.com</a>
+                    <br /><b>Zab Biason</b> <a href="tel:12087613376">(208) 761-3376</a> <a href="mailto:cmpternerd@cableone.net">cmpternerd@cableone.net</a>
+                </p>
+            </div>
+        </div>
+        <!--Col B-->
+        <div class="col-md-6">
+            <!--
+                Form Layout:
+                
+                Select Course: {select}
+                    Course 1: July 13th – July 18th 2015
+                    Course 2: July 20th – July 25th 2015
+                Full Name: {text}
+                Full Address: {text}
+                Email: {email}
+                Phone/Cell {number}
+                Age: {number}
+                Rank: {select}
+                    Scout
+                    Tenderfoot
+                    Second-Class
+                    First-Class
+                    Star
+                    Life
+                    Eagle
+                Unit#: {number}
+                Shirt Size: Adult(sm,md,lg,xl,2xl) {radio}
+                Dietary Restrictions: {text}
+                Physical Restrictions: {text}
+            -->
+            <form action="#" method="POST" id="registration">
+                <fieldset>
+                    <legend>Registration</legend>
+                    <div class="form-group row">
+                        <div class="col-md-4 text-right">
+                            <label for="courseSelection">Select Course:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-control" id="courseSelection">
+                                <option value="1">Course 1: July 13th - July 18th 2016</option>
+                                <option value="2">Course 2: July 20th - July 25th 2016</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 text-right">
+                            <label for="nameFull">Full Name:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" id="nameFirst" placeholder="First" />
+                        </div>
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" id="nameLast" placeholder="Last" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 text-right">
+                            <label for="address">Full Address:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="addrStreet" placeholder="Street" />
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="addrCity" placeholder="City" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <input type="text" class="form-control" id="addrState" placeholder="State" />
+                        </div>
+                        <div class="col-md-4">
+                            <input type="number" class="form-control" id="addrZIP" placeholder="ZIP" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 text-right">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="email" class="form-control" id="email" placeholder="boy@scouts.com" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 text-right">
+                            <label for="phone">Phone:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="number" class="form-control" id="phone" placeholder="123-456-7891" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 text-right">
+                            <label for="age">Age:</label>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="number" class="form-control" id="age" placeholder="16" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 text-right">
+                            <label for="rank">Rank:</label>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-control" id="rank">
+                                <option value="scout">Scout</option>
+                                <option value="tenderfoot">Tenderfoot</option>
+                                <option value="2class">Second-Class</option>
+                                <option value="1class">First-Class</option>
+                                <option value="star">Star</option>
+                                <option value="life">Life</option>
+                                <option value="eagle">Eagle</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 text-right">
+                            <label for="age">Unit #:</label>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="number" class="form-control" id="unit" placeholder="123" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 text-right">
+                            <label for="shirt">Shirt Size:</label>
+                        </div>
+                        <div class="col-md-8">
+                            <label class="radio-inline">
+                                <input type="radio" id="shirt" value="s"> S
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="shirt" value="m"> M
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="shirt" value="l"> L
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="shirt" value="xl"> XL
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="shirt" value="xxl"> 2XL
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 text-right">
+                            <label for="age">Dietary Restrictions:</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="diet" placeholder="None" />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-4 text-right">
+                            <label for="age">Physical Restrictions:</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="phys" placeholder="None" />
+                        </div>
+                    </div>
+                </fieldset>
+                <input class="btn btn-default pull-right" type="submit" value="Submit">
+            </form>
+        </div>
+        <!--Close Site Container-->
+    </div>
+
+</body>
+
+</html>
