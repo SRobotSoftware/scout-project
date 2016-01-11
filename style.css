@@ -1,5 +1,7 @@
-.site-container {
+body {
     background-image: linear-gradient(#ddd,#aaa);
+}
+.site-container {
     padding-top: 15px;
     padding-bottom: 15px;
 }
